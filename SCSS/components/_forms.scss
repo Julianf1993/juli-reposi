@@ -1,0 +1,25 @@
+.cv {
+    
+    border: 1px solid $primary-color ;
+    
+    & label{
+        width: 100%;
+    }
+    & input{
+        width: 100%;
+    }
+    & select{
+        width: 100%;
+    }
+}
+input {
+    width: 30%;
+}
+
+.forim {
+    display: flex;
+}
+.consultas {
+    display: flex;
+    justify-content: start;
+}

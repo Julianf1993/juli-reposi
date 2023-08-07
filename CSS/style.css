@@ -15,80 +15,86 @@ h5 {
   font-family: "Lilita One", cursive;
 }
 
-/*Logo de la pagina*/
-.navbar-logo-img {
+.max-width-500 {
+  max-width: 500px;
+}
+
+.max-width-600 {
+  max-width: 600px;
+}
+
+.max-width-700 {
+  max-width: 700px;
+}
+
+.max-width-800 {
+  max-width: 800px;
+}
+
+.max-width-900 {
+  max-width: 900px;
+}
+
+.button-primary {
+  background-color: rgb(218, 5, 5);
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: 900;
+  border: none;
+  border-radius: 4px;
+}
+.button-primary:hover {
+  filter: brightness(1.2);
+}
+
+.button-secondary {
+  background-color: rgb(7, 7, 90);
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: 900;
+  border: none;
+  border-radius: 4px;
+}
+.button-secondary:hover {
+  filter: brightness(1.2);
+}
+
+.wa-button {
+  position: fixed;
+  display: flex;
   width: 100%;
   height: auto;
-  max-width: 70px;
+  bottom: 15px;
+  right: 15px;
+  max-width: 40px;
+  z-index: 999;
+  padding: 9px;
+  background: green;
+  fill: white;
+  border-radius: 50%;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  transform: scale(0);
+  animation: appear 0.3s 1.5s forwards;
+  transition: 0.3s;
+}
+.wa-button:hover {
+  filter: brightness(1.2);
+  transition: 0.3s;
 }
 
-@media (max-width: 767px) {
-  .navbar-logo-img {
-    max-width: 50px;
+@keyframes appear {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
   }
 }
-.himalaya {
-  /* width: 600px; */
-  border: solid blue;
-}
-
-footer {
-  height: 10%;
-  /* background-color: rgb(5, 5, 5); */
-  display: flex;
-  flex-direction: column;
-}
-
-.whatsapp {
-  width: 25px;
-  height: 25px;
-}
-
-/*Logo de whatsapp*/
-.Gustos {
-  text-align: center;
-}
-
-/*Encabezado de los gustos de helados*/
-.Tortas {
-  text-align: center;
-}
-
-/*Encabezado de las tortas*/
-.productosmain {
-  background-color: brown;
-}
-
-.padding-for-fixed-navbar {
-  padding-top: 86px;
-}
-
-/*Input myfile del formulario de rrhh*/
-.parrim {
-  display: flex;
-}
-
-#carouselExample {
-  height: 5%;
-}
-
-.paleta {
-  height: 30%;
-}
-
-.tortahelada {
-  height: 30%;
-}
-
-.consultas {
-  display: flex;
-  justify-content: start;
-}
-
-.numero {
-  display: flex;
-}
-
 .cv {
   border: 1px solid rgb(218, 5, 5);
 }
@@ -110,63 +116,11 @@ input {
   display: flex;
 }
 
-.lista-gustos {
+.consultas {
   display: flex;
-  justify-content: space-around;
+  justify-content: start;
 }
 
-.nuestrosproductos {
-  text-align: center;
-}
-
-.contenedor-carrusel {
-  width: 50%;
-  height: 50%;
-}
-
-.historia-imagen {
-  display: flex;
-}
-
-span.carousel-control-prev-icon,
-span.carousel-control-next-icon {
-  border-radius: 4px;
-  background-color: rgba(0, 0, 0, 0.18);
-  background-size: 57%;
-}
-
-.copyright {
-  font-size: 13px;
-  opacity: 0.6;
-}
-
-/* Custom sizes */
-.max-width-900 {
-  max-width: 900px;
-}
-
-/* Custom bootstrap */
-.card img {
-  height: 180px;
-  width: 100%;
-  object-fit: cover;
-}
-
-.card-title {
-  font-size: 18px;
-}
-
-#scroll-cards .card {
-  border: 0;
-  border-radius: 0;
-}
-
-#scroll-cards .card-img, #scroll-cards .card-img-top {
-  border: 0;
-  border-radius: 0;
-}
-
-/* Section Category */
 #categories {
   width: 100%;
   max-width: 900px;
@@ -205,74 +159,69 @@ span.carousel-control-next-icon {
   object-fit: cover;
 }
 
-.nuestraHistoria {
-  text-align: center;
+span.carousel-control-prev-icon,
+span.carousel-control-next-icon {
+  border-radius: 4px;
+  background-color: rgba(0, 0, 0, 0.18);
+  background-size: 57%;
 }
 
-.historia-imagen {
+.himalaya {
+  /* width: 600px; */
+  border: solid blue;
+}
+
+.whatsapp {
+  width: 25px;
+  height: 25px;
+}
+
+.navbar-logo-img {
+  width: 100%;
+  height: auto;
+  max-width: 70px;
+}
+
+.padding-for-fixed-navbar {
+  padding-top: 86px;
+}
+
+.card img {
+  height: 180px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.card-title {
+  font-size: 18px;
+}
+
+#scroll-cards .card {
+  border: 0;
+  border-radius: 0;
+}
+
+#scroll-cards .card-img, #scroll-cards .card-img-top {
+  border: 0;
+  border-radius: 0;
+}
+
+footer {
+  height: 10%;
+  /* background-color: rgb(5, 5, 5); */
   display: flex;
+  flex-direction: column;
 }
 
-.trabaja {
-  text-align: center;
+.copyright {
+  font-size: 13px;
+  opacity: 0.6;
 }
 
-.max-height-vh-30 {
-  height: 30vh;
-}
-
-.max-height-vh-40 {
-  height: 40vh;
-}
-
-.max-height-vh-50 {
-  height: 50vh;
-}
-
-.max-height-vh-60 {
-  height: 60vh;
-}
-
-.max-height-vh-70 {
-  height: 70vh;
-}
-
-.max-height-vh-80 {
-  height: 80vh;
-}
-
-.max-height-vh-90 {
-  height: 90vh;
-}
-
-.max-height-vh-100 {
-  height: 100vh;
-}
-
-.button-primary {
-  background-color: #880a0a;
-  color: #fff;
-  padding: 10px 20px;
-  font-size: 16px;
-  font-weight: 900;
-  border: none;
-  border-radius: 4px;
-}
-.button-primary:hover {
-  filter: brightness(1.2);
-}
-
-.button-secondary {
-  background-color: #6c757d;
-  color: #fff;
-  padding: 10px 20px;
-  font-size: 14px;
-  font-weight: 900;
-  border: none;
-  border-radius: 4px;
-}
-.button-secondary:hover {
-  filter: brightness(1.2);
+@media (max-width: 767px) {
+  .navbar-logo-img {
+    max-width: 50px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

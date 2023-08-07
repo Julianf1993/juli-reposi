@@ -1,0 +1,33 @@
+#categories{
+    width: 100%;
+    max-width: 900px;
+    overflow: hidden;
+    margin: auto;
+}
+.category{
+    position: relative;
+    height: 250px;
+    max-width: 550px;
+}
+.category-title{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    color: #ffffff;
+    font-size: 22px;
+    background: rgba(0, 0, 0, 0.4);
+    transition: 0.2s;
+    top: 0;
+}
+.category-title:hover{
+    background: rgba(0, 0, 0, 0);
+    transition: 0.2s;
+}
+.category img{
+    height: 100%;
+    width: auto;
+    object-fit: cover;
+}

@@ -1,0 +1,5 @@
+@each $width in $width-px-values {
+    .max-width-#{$width} {
+        max-width: #{$width}px;
+    }
+}

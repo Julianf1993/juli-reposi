@@ -1,0 +1,13 @@
+@mixin button($background-color, $font-size) {
+    background-color: $background-color;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: $font-size;
+    font-weight: 900;
+    border: none;
+    border-radius: 4px;
+}
+
+@mixin button-hover($brightness) {
+    filter: brightness($brightness);
+}

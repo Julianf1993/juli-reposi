@@ -1,0 +1,50 @@
+.button-primary {
+    @include button($primary-color, 16px); // Usando el mixin con valores específicos
+
+    &:hover {
+        @include button-hover(1.2);
+    }
+}
+
+.button-secondary {
+    @include button($secondary-color, 14px); // Usando el mixin con otros valores
+
+    &:hover {
+        @include button-hover(1.2);
+    }
+}
+
+.wa-button{
+    position: fixed;
+    display: flex;
+    width: 100%;
+    height: auto;
+    bottom: 15px;
+    right: 15px;
+    max-width: 40px;
+    z-index: 999;
+    padding: 9px;
+    background: green;
+    fill: white;
+    border-radius: 50%;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    transform: scale(0);
+    animation: appear 0.3s 1.5s forwards;
+    transition: 0.3s;
+    &:hover{
+        filter: brightness(1.2);
+        transition: 0.3s;
+    }
+  }
+  
+  @keyframes appear {
+    0% {
+        opacity: 0;
+        transform: scale(0);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+  }
