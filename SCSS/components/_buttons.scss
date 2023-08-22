@@ -1,16 +1,18 @@
-.button-primary {
-    @include button($primary-color, 16px); // Usando el mixin con valores específicos
+.button{
+    &-primary{
+        @include button($primary-color, 16px); // Usando el mixin con valores específicos
 
-    &:hover {
-        @include button-hover(1.2);
+        &:hover {
+            @include button-hover(1.2);
+        }
     }
-}
 
-.button-secondary {
-    @include button($secondary-color, 14px); // Usando el mixin con otros valores
+    &-secondary{
+        @include button($secondary-color, 14px); // Usando el mixin con otros valores
 
-    &:hover {
-        @include button-hover(1.2);
+        &:hover {
+            @include button-hover(1.2);
+        }
     }
 }
 

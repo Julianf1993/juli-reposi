@@ -47,7 +47,6 @@ h5 {
 .button-primary:hover {
   filter: brightness(1.2);
 }
-
 .button-secondary {
   background-color: rgb(7, 7, 90);
   color: #fff;
@@ -133,34 +132,41 @@ input {
   height: 250px;
   max-width: 550px;
 }
-
-.category-title {
+.category .category-title {
   position: absolute;
   display: flex;
   justify-content: center;
   width: 100%;
   height: 100%;
-  align-items: center;
+  top: 0;
   color: #ffffff;
   font-size: 22px;
   background: rgba(0, 0, 0, 0.4);
   transition: 0.2s;
-  top: 0;
 }
-
-.category-title:hover {
+.category .category-title:hover {
   background: rgba(0, 0, 0, 0);
   transition: 0.2s;
 }
-
 .category img {
   height: 100%;
   width: auto;
   object-fit: cover;
 }
 
-span.carousel-control-prev-icon,
-span.carousel-control-next-icon {
+.icon-inline {
+  display: inline-block;
+  font-size: inherit;
+  height: 50px;
+  overflow: visible;
+  vertical-align: -0.125em;
+}
+
+.payment-methods-information {
+  background-color: rgb(142, 247, 255);
+}
+
+span.carousel-control-prev-icon, span.carousel-control-next-icon {
   border-radius: 4px;
   background-color: rgba(0, 0, 0, 0.18);
   background-size: 57%;
@@ -186,24 +192,22 @@ span.carousel-control-next-icon {
   padding-top: 86px;
 }
 
+#scroll-cards .card {
+  border: 0;
+  border-radius: 0;
+}
+#scroll-cards .card-img, #scroll-cards .card-img-top {
+  border: 0;
+  border-radius: 0;
+}
+
 .card img {
   height: 180px;
   width: 100%;
   object-fit: cover;
 }
-
 .card-title {
   font-size: 18px;
-}
-
-#scroll-cards .card {
-  border: 0;
-  border-radius: 0;
-}
-
-#scroll-cards .card-img, #scroll-cards .card-img-top {
-  border: 0;
-  border-radius: 0;
 }
 
 footer {
